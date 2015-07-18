@@ -1,5 +1,6 @@
 # -*- encoding: utf-8 -*-
-$LOAD_PATH << File.expand_path('../lib', __FILE__)
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'jdbc/filemaker/version'
 
 Gem::Specification.new do |gem|
