@@ -1,5 +1,27 @@
-# activerecord-jdbc-filemaker
-ActiveRecord adapter to access Filemaker database using JDBC
+# jdbc-filemaker, a JDBC driver for JRuby and Filemaker
 
-Current driver only supports Filemaker 11. 
-See ActiveRecord JDBC Adapter for configuration. 
+ActiveRecord adapter to access Filemaker 14 database using JDBC.
+
+See [ActiveRecord JDBC Adapter](https://github.com/jruby/activerecord-jdbc-adapter#using-activerecord-jdbc) for configuration.
+
+# Quick Start
+
+* Install
+
+  ```ruby
+  gem 'activerecord-jdbc-adapter'
+  gem 'jdbc-filemaker'
+  ```
+
+  ```sh
+  bundle [install]
+  ```
+
+* Use gem
+
+  ```ruby
+  # e.g. config/application.rb
+
+  require 'jdbc/filemaker'
+  Jdbc::Filemaker.load_driver
+  ```
